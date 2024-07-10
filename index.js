@@ -22,14 +22,14 @@ function updateTime() {
     }
 
     // São Paulo
-    let brazilElement = document.querySelector("#brazil");
-    if (brazilElement) {
-        let brazilDateElement = document.querySelector(".date");
-        let brazilTimeElement = document.querySelector(".time");
-        let brazilTime = moment().tz("America/Sao_Paulo");
+    let saoPauloElement = document.querySelector("#sao-paulo");
+    if (saoPauloElement) {
+        let saoPauloDateElement = document.querySelector(".date");
+        let saoPauloTimeElement = document.querySelector(".time");
+        let saoPauloTime = moment().tz("America/Sao_Paulo");
 
-        tokyoDateElement.innerHTML = brazilTime.format("dddd, MMMM Do YYYY");
-        tokyoTimeElement.innerHTML = brazilTime.format("h:mm:ss A");
+        saoPauloDateElement.innerHTML = saoPauloTime.format("dddd, MMMM Do YYYY");
+        saoPauloTimeElement.innerHTML = saoPauloTime.format("h:mm:ss A");
     }
 }
 
