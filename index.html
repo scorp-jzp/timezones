@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta hhtp-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+    <title>TimeZones</title>
+</head>
+<body>
+    <div class="container">
+        <h1>TimeZones</h1>
+
+        <select>
+            <option value="" selected>Select a place...</option>
+            <option value="new-york">New York</option>
+            <option value="london">London</option>
+            <option value="paris">Paris</option>
+            <option value="tokyo">Tokyo</option>
+            <option value="brazil">Brazil</option>
+        </select>
+
+        <div class="city">
+            <div class="city" id="new-york">
+                <h2>New York</h2>
+                <div class="date"></div>
+                <div class="time"></div>
+            </div>
+            <div class="city" id="london">
+                <h2>London</h2>
+                <div class="date"></div>
+                <div class="time"></div>
+            </div>
+            <div class="city" id="brazil">
+                <h2>Paris</h2>
+                <div class="date"></div>
+                <div class="time"></div>
+            </div>
+        </div>
+    <footer>
+        This project was coded by Scorp and is open source. You can find the code on <a href="https://github.com/scorp-jzp/timezones.git">GitHub</a> and the demo on <a href="https://clockzones.netlify.app/">Netlify</a>.
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
