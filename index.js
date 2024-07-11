@@ -2,8 +2,8 @@ function updateTime() {
     // New York
     let newYorkElement = document.querySelector("#new-york");
     if (newYorkElement) {
-        let newYorkDateElement = document.querySelector(".date");
-        let newYorkTimeElement = document.querySelector(".time");
+        let newYorkDateElement = newYorkElement.querySelector(".date");
+        let newYorkTimeElement = newYorkElement.querySelector(".time");
         let newYorkTime = moment().tz("America/New_York");
 
         newYorkDateElement.innerHTML = newYorkTime.format("dddd, MMMM Do YYYY");
@@ -13,8 +13,8 @@ function updateTime() {
     // London
     let londonElement = document.querySelector("#london");
     if (londonElement) {
-        let londonDateElement = document.querySelector(".date");
-        let londonTimeElement = document.querySelector(".time");
+        let londonDateElement = londonElement.querySelector(".date");
+        let londonTimeElement = londonElement.querySelector(".time");
         let londonTime = moment().tz("Europe/London");
 
         londonDateElement.innerHTML = londonTime.format("dddd, MMMM Do YYYY");
@@ -24,8 +24,8 @@ function updateTime() {
     // São Paulo
     let saoPauloElement = document.querySelector("#sao-paulo");
     if (saoPauloElement) {
-        let saoPauloDateElement = document.querySelector(".date");
-        let saoPauloTimeElement = document.querySelector(".time");
+        let saoPauloDateElement = saoPauloElement.querySelector(".date");
+        let saoPauloTimeElement = saoPauloElement.querySelector(".time");
         let saoPauloTime = moment().tz("America/Sao_Paulo");
 
         saoPauloDateElement.innerHTML = saoPauloTime.format("dddd, MMMM Do YYYY");
