@@ -14,7 +14,7 @@ function updateTime() {
     // Tokyo
     let tokyoElement = document.querySelector("#tokyo");
     if (tokyoElement) {
-        let tokyosDateElement = tokyoElement.querySelector(".date");
+        let tokyoDateElement = tokyoElement.querySelector(".date");
         let tokyoTimeElement = tokyoElement.querySelector(".time");
         let tokyoTime = moment().tz("Asia/Tokyo");
     
