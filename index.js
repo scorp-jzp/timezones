@@ -1,13 +1,13 @@
 function updateTime() {
     // New York
-    let newYorkElement = document.querySelector("#new-york");
-    if (newYorkElement) {
-        let newYorkDateElement = newYorkElement.querySelector(".date");
-        let newYorkTimeElement = newYorkElement.querySelector(".time");
-        let newYorkTime = moment().tz("America/New_York");
+    let bahrainElement = document.querySelector("#bahrain");
+    if (bahrainElement) {
+        let bahrainDateElement = bahrainElement.querySelector(".date");
+        let bahrainTimeElement = bahrainElement.querySelector(".time");
+        let bahrainTime = moment().tz("Asia/Bahrain");
     
-        newYorkDateElement.innerHTML = newYorkTime.format("MMMM	Do YYYY");
-        newYorkTimeElement.innerHTML = newYorkTime.format(
+        bahrainDateElement.innerHTML = bahrainTime.format("MMMM	Do YYYY");
+        bahrainTimeElement.innerHTML = bahrainTime.format(
             "h:mm:ss [<small>]A[</small>]"
         );
     }
