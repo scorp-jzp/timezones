@@ -1,18 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f9f7fe;
+    background-color: #f9f7fe;
+    font-family: sans-serif;
 }
 
 h1 {
     text-align: center;
+    font-family: sans-serif;
     font-size: 36px;
 }
 
 h2 {
-    font-size: 28px;
     margin: 0 0 5px;
+    font-size: 28px;
 }
 
 select {
@@ -37,7 +36,7 @@ select {
     margin: 10px 0;
     justify-content: space-between;
     padding: 30px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
 .city:last-child {
@@ -61,6 +60,6 @@ select {
 
 footer {
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     color: rgba(0, 0, 0, 0.8);
 }
