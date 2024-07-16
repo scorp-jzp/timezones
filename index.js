@@ -55,6 +55,7 @@ function updateCity(event) {
             "A"
             )}</small></div>
         </div>
+        <a href="/">Cities of Past Circuits</a>
     `;
 }
 
