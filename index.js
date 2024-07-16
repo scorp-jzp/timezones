@@ -11,6 +11,18 @@ function updateTime() {
             "h:mm:ss [<small>]A[</small>]"
         );
     }
+    // Monaco
+    let monacoElement = document.querySelector("#monaco");
+    if (monacoElement) {
+        let monacoDateElement = monacoElement.querySelector(".date");
+        let monacoTimeElement = monacoElement.querySelector(".time");
+        let monacoTime = moment().tz("Europa/Monaco");
+    
+        monacoDateElement.innerHTML = monacoTime.format("MMMM	Do YYYY");
+        monacoTimeElement.innerHTML = monacoTime.format(
+            "h:mm:ss [<small>]A[</small>]"
+        );
+    }
     // Tokyo
     let tokyoElement = document.querySelector("#tokyo");
     if (tokyoElement) {
